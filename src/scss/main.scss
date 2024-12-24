@@ -1,0 +1,30 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/fontsAutoGen";
+@import "./base/base";
+@import "./base/containers";
+@import "./base/sticky-footer";
+@import "./base/catalog";
+@import "./base/favorites";
+@import "./base/favorites-empty";
+@import "./base/406";
+@import "./base/game";
+
+/* Blocks */
+@import "./blocks/header.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/icons.scss";
+@import "./blocks/info.scss";
+@import "./blocks/main.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/mobile-filter.scss";
+@import "./blocks/mobile-nav.scss";
+@import "./blocks/nav-icon.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/titles.scss";
+@import "./blocks/updates.scss";
+
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */

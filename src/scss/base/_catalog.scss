@@ -1,0 +1,64 @@
+.main-catalog {
+	padding-top: 18px !important;
+}
+
+.catalog-sort-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+.catalog-sort-news {
+	display: flex;
+	column-gap: 5px;
+}
+.catalog-sort-news-item {
+	padding: 10px 18px;
+	border-radius: 8px;
+	border: 1px var(--dark-border) solid;
+	backdrop-filter: blur(4px);
+	color: var(--text-color);
+	font-size: 12px;
+	font-weight: 700;
+
+	&:hover {
+		border: 1px #2fc158 solid;
+		cursor: pointer;
+	}
+}
+
+.breadcrumbs_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	column-gap: 10px;
+}
+.breadcrumbs__home {
+	font-size: 12px;
+	color: #c8d2e3;
+	font-weight: 300;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.breadcrumbs__games {
+	font-size: 12px;
+	color: #c8d2e3;
+	font-weight: 300;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.breadcrumbs__inner {
+	font-size: 12px;
+	color: #878a8f;
+	font-weight: 300;
+}
+
+@media only screen and (max-width: 460px) {
+	.catalog-sort-wrapper {
+		display: none;
+	}
+}

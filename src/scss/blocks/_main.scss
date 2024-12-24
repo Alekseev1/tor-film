@@ -1,0 +1,469 @@
+.main {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.main-wrapper {
+	display: flex;
+	align-items: start;
+	column-gap: 30px;
+}
+
+.main__games {
+	max-width: 1195px;
+	flex-grow: 1;
+}
+
+.main__games-head {
+	display: flex;
+	align-items: center;
+	column-gap: 24px;
+	margin-bottom: 25px;
+}
+
+.main__sort-wrapper {
+	margin-bottom: 0 !important;
+}
+
+.main__cards-list {
+	gap: 30px;
+	flex-wrap: wrap;
+}
+
+.main__card {
+	&:hover::before {
+		content: none !important;
+	}
+}
+
+.main__card:nth-child(n + 31) {
+	display: none;
+}
+
+.favorites-games-wrapper .main__card:nth-child(n + 16) {
+	display: none;
+}
+
+.main__cards-list .main__card.visible {
+	display: flex !important;
+}
+
+.main__card-info-title {
+	align-self: center;
+	color: var(--text-color);
+	font-size: 16px;
+	height: 50px;
+}
+
+.main__card-size {
+	color: var(--text-color);
+}
+
+.main-sort {
+	width: 215px;
+}
+.show-more-btn {
+	display: flex;
+	max-width: 172px;
+	margin: 30px auto 0 auto;
+	align-items: center;
+	column-gap: 10px;
+	padding: 15px 20px;
+	border-radius: 14px;
+	border: 2px #2fc158 solid;
+	color: var(--text-color);
+	font-size: 14px;
+	font-weight: 700;
+
+	&:hover {
+		background: rgba(96, 211, 129, 0.9);
+		color: #fff;
+	}
+
+	&:hover .show-more {
+		fill: #fff;
+	}
+
+	&:active {
+		background: rgba(42.62, 171.17, 78.61, 0.9);
+		box-shadow: 0px 4px 11px rgba(23.86, 96.53, 52.93, 0.33) inset;
+	}
+}
+
+.film-genre {
+	cursor: pointer;
+}
+
+.sort-genre {
+}
+.sort-genre-title,
+.sort-year-title,
+.sort-collections-title,
+.sort-popular-title,
+.sort-updates-title,
+.sort-comments-title {
+	color: var(--text-color);
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 26px;
+}
+
+.sort-genre-list,
+.sort-collections-list {
+	border-radius: 8px;
+	border: 2px var(--dark-border) solid;
+	margin-bottom: 25px;
+}
+.sort-genre-item,
+.sort-collections-item {
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 36px;
+	padding: 8px;
+	border-bottom: 1px solid;
+	border-bottom-color: var(--dark-border);
+	padding-left: 17px;
+
+	color: #657589;
+	line-height: 21px;
+
+	&:hover {
+		font-weight: 700;
+		cursor: pointer;
+	}
+
+	&.active {
+		color: #2fc158;
+	}
+}
+
+.sort-year {
+}
+
+.sort-year-grid {
+	border-radius: 8px;
+	border: 2px var(--dark-border) solid;
+	margin-bottom: 25px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	&:hover {
+		font-weight: 700;
+		cursor: pointer;
+	}
+}
+
+.sort-year-item {
+	list-style: none;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 36px;
+	padding: 8px;
+	border-bottom: 1px var(--dark-border) solid;
+	border-right: 1px var(--dark-border) solid;
+
+	color: #657589;
+	line-height: 21px;
+
+	&.active {
+		color: #2fc158;
+	}
+}
+
+.sort-year-item:nth-child(3n) {
+	border-right: none;
+}
+
+.sort-collections {
+}
+
+.sort-popular-wrapper {
+	height: 491px;
+	overflow-y: auto;
+	margin-bottom: 5px;
+}
+
+.sort-popular-card {
+}
+
+.popular-card-wrapper {
+	max-width: 201px;
+	margin-bottom: 5px;
+	display: flex;
+	padding: 9px 14px 14px 11px;
+	border-radius: 8px;
+	border: 2px var(--dark-border) solid;
+	column-gap: 13px;
+
+	&:hover {
+		cursor: pointer;
+		border: 2px #2fc158 solid;
+	}
+
+	&:hover .popular-card-name {
+		color: #2fc058;
+	}
+}
+.popular-card-img img {
+	width: 63px;
+	border-radius: 6px;
+	aspect-ratio: 1/1;
+}
+.popular-card-info {
+	display: flex;
+	flex-direction: column;
+}
+.popular-card-name {
+	color: var(--text-color);
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 17.16px;
+	margin-bottom: 1px;
+}
+.popular-card-stats {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.popular-card-stats-size {
+	color: #4dca71;
+	font-size: 13px;
+	font-weight: 800;
+}
+.popular-card-stats-year {
+	color: #a1acb9;
+	font-size: 11px;
+	font-weight: 600;
+}
+.popular-card-rate {
+}
+.popular-card__rating {
+	display: flex;
+	column-gap: 5px;
+	align-items: center;
+	align-items: baseline;
+}
+
+.popular-card__rating-mark {
+	color: #a1acb9;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+// Custom scroll
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--dark-border);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--accent);
+	border-radius: 20px;
+	border: 1px solid transparent;
+	background-clip: content-box;
+}
+
+.show-all-btn {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	width: 100%;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	column-gap: 8px;
+	background: #2fc158;
+	border-radius: 7px;
+	margin-bottom: 25px;
+
+	&:hover {
+		background: rgba(42.62, 171.17, 78.61, 0.9);
+		box-shadow: 0px 4px 11px rgba(23.86, 96.53, 52.93, 0.33) inset;
+		cursor: pointer;
+	}
+}
+
+.show-all-btn-text {
+	color: #fdfdfd;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.sort-updates-wrapper {
+	height: 327px;
+}
+
+.sort-comments-wrapper {
+	height: 363px;
+}
+
+.sort-comments-card {
+	max-width: 201px;
+	margin-bottom: 5px;
+	display: flex;
+	flex-direction: column;
+	padding: 9px 10px 12px 12px;
+	border-radius: 8px;
+	border: 2px var(--dark-border) solid;
+	row-gap: 8px;
+}
+.comments-card-user {
+	display: flex;
+	column-gap: 8px;
+	width: 176px;
+}
+.comments-card-user-img img {
+	border-radius: 6px;
+	width: 28px;
+	height: 28px;
+}
+.comments-card-user-info {
+	display: flex;
+	flex-direction: column;
+}
+.comments-card-user-name {
+	color: #1e1e1e;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 17.16px;
+}
+.comments-card-user-desc {
+	display: flex;
+	align-items: baseline;
+	width: 138px;
+}
+
+.comments-card-user-game {
+	color: #a1acb9;
+	font-size: 11px;
+	font-weight: 600;
+}
+.comments-card-user-time {
+	color: #a1acb9;
+	font-size: 10px;
+	margin-left: auto;
+}
+.comments-card-user-text {
+	color: #a1acb9;
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.main__games-filter {
+	display: none;
+}
+
+.game__form-input input {
+	border: none;
+	width: 100%;
+}
+.game__form-input textarea {
+	border: none;
+	width: 100%;
+}
+
+@media only screen and (max-width: 460px) {
+	.main-sort {
+		margin-left: unset;
+		width: 100%;
+	}
+
+	.popular-card-wrapper {
+		max-width: unset;
+	}
+	.show-more-btn {
+		font-size: 14px;
+		padding: 12px 16px;
+		margin-bottom: 20px;
+	}
+	.sort-genre-title,
+	.sort-year-title,
+	.sort-collections-title,
+	.sort-popular-title,
+	.sort-updates-title,
+	.sort-comments-title {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.popular-card-img img {
+		width: 63px;
+		height: 63px;
+	}
+	.popular-card-wrapper {
+		margin-bottom: 10px;
+		padding: 12px;
+		border-radius: 8px;
+		column-gap: 16px;
+	}
+	.popular-card-name {
+		font-size: 14px;
+		line-height: 13.2px;
+		margin-bottom: 7px;
+	}
+	.popular-card-stats {
+		justify-content: start;
+		column-gap: 17px;
+	}
+	.popular-card-rate .popular-card-rate {
+		width: 9px;
+		height: 9px;
+	}
+	.sort-comments-card {
+		max-width: unset;
+		padding: 12px 16px 12px 12px;
+		margin-bottom: 10px;
+	}
+	.comments-card-user {
+		width: unset;
+	}
+	.comments-card-user-info {
+		width: 100%;
+	}
+	.comments-card-user-desc {
+		width: unset;
+	}
+
+	.main {
+		padding-top: 18px;
+		padding-bottom: 0;
+	}
+	.main__games-head {
+		margin-bottom: 17px;
+	}
+	.main__games {
+		width: 100%;
+	}
+	.main__games-filter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		width: 35px;
+		height: 35px;
+		background-color: var(--accent);
+		margin-left: auto;
+	}
+	.main__games-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 378px) {
+	.main__cards-list {
+		display: grid !important;
+		grid-template-columns: 1fr !important;
+	}
+	.main__card {
+		margin: 0 auto;
+		max-width: 280px;
+	}
+}

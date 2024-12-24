@@ -1,0 +1,395 @@
+.icons-wrapper {
+	padding: 30px 0;
+	display: flex;
+	column-gap: 30px;
+}
+
+.nav-item-wrapper,
+.header__top-favorites-wrapper {
+	display: flex;
+	column-gap: 7px;
+	align-items: center;
+}
+
+.icon {
+	fill: transparent;
+	stroke: transparent;
+	width: 15px;
+	height: 15px;
+}
+
+.star,
+.updates-icon,
+.games-year,
+.dice,
+.network,
+.calendar,
+.heart,
+.tic-toc,
+.twich,
+.instagram,
+.youtube,
+.x,
+.breadcrumbs,
+.check {
+	fill: var(--accent);
+}
+
+.sun {
+	fill: #fff;
+	width: 14px;
+	height: 14px;
+	position: relative;
+}
+
+.moon {
+	fill: #fff;
+	width: 13px;
+	height: 13px;
+	position: relative;
+}
+
+.cross {
+	fill: var(--accent);
+	width: 12px;
+	height: 12px;
+}
+
+.heart_icon {
+	fill: transparent;
+	stroke: var(--accent);
+	width: 22px;
+	height: 20px;
+}
+
+.arrow-left {
+	fill: #fff;
+	transform: rotate(0deg);
+	width: 9px;
+	height: 9px;
+}
+.arrow-right {
+	fill: #fff;
+	transform: rotate(180deg);
+	width: 9px;
+	height: 9px;
+}
+
+.search_icon {
+	z-index: 2;
+	content: "";
+	position: absolute;
+	opacity: 0.5;
+
+	fill: var(--accent);
+	width: 20px;
+	height: 20px;
+
+	position: absolute;
+	left: 24px;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+
+.arrow-down {
+	position: absolute;
+
+	fill: var(--accent);
+
+	width: 6px !important;
+	height: 6px !important;
+
+	right: 14px;
+	top: 50%;
+	transform: translate(0%, -50%);
+	pointer-events: none;
+}
+
+.icon--user {
+	stroke: rgb(26, 134, 235);
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		stroke: rgb(17, 193, 90);
+	}
+}
+
+.star-rating {
+	fill: var(--accent);
+	width: 10px;
+	height: 10px;
+}
+.star-rating-nofill {
+	fill: #c8d9cd;
+	width: 10px;
+	height: 10px;
+}
+
+.star-rating-big,
+.time {
+	fill: var(--accent);
+	width: 14px;
+	height: 14px;
+}
+.star-rating-big-nofill {
+	fill: #c8d9cd;
+	width: 14px;
+	height: 14px;
+}
+
+.download,
+.downloaded {
+	fill: #ffffff;
+}
+
+.show-more {
+	fill: var(--accent);
+	width: 20px;
+	height: 19px;
+}
+
+.arrow-right-min {
+	fill: var(--accent);
+	width: 7px;
+	height: 10px;
+	transform: rotate(-90deg);
+	margin-right: 9px;
+}
+
+.arrow-down-accordion {
+	fill: #fff;
+	width: 12px;
+	height: 7px;
+}
+
+.arrow-up {
+	fill: #fff;
+	width: 20px;
+	height: 24px;
+}
+
+.night-mode {
+	fill: #fff;
+	width: 20px;
+	height: 20px;
+}
+
+.youtube {
+	width: 15px;
+	height: 11px;
+}
+
+.tic-toc {
+	width: 12px;
+	height: 14px;
+}
+
+.twich {
+	width: 15px;
+	height: 12px;
+}
+
+.instagram {
+	width: 16px;
+	height: 16px;
+}
+.x {
+	width: 16px;
+	height: 16px;
+}
+
+.breadcrumbs {
+	width: 7px;
+	height: 6px;
+}
+
+.game-downloaded {
+	fill: var(--accent);
+}
+
+.heart-white {
+	fill: #fff;
+}
+
+.check {
+	stroke: #fff;
+	width: 19px;
+	height: 19px;
+}
+.steam {
+	fill: var(--accent);
+	width: 19px;
+	height: 19px;
+}
+
+.torrent {
+	fill: var(--accent);
+	width: 23px;
+	height: 23px;
+}
+
+.upd {
+	fill: #fff;
+	width: 10px;
+	height: 10px;
+}
+
+.note {
+	fill: var(--accent);
+	width: 24px;
+	height: 24px;
+}
+
+.arrow-down-table {
+	fill: var(--accent) !important;
+}
+
+.badge {
+	fill: var(--accent);
+	margin-right: 5px;
+	width: 25px;
+	height: 22px;
+}
+
+.like,
+.answer {
+	fill: var(--accent);
+	width: 16px;
+	height: 16px;
+}
+.dislike {
+	fill: #b0b9c4;
+	width: 16px;
+	height: 16px;
+}
+
+.mobile-btn-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	width: 35px;
+	height: 35px;
+	background-color: var(--accent);
+}
+
+.mobile-btn {
+	fill: #fff;
+	width: 18px;
+	height: 15px;
+}
+
+.read-more {
+	fill: var(--accent);
+	width: 9px;
+	height: 7px;
+}
+
+@media only screen and (max-width: 460px) {
+	.search_icon {
+		width: 15px;
+		height: 15px;
+		left: 13px;
+	}
+
+	.filter {
+		fill: var(--accent);
+		width: 16px;
+		height: 16px;
+	}
+	.heart_icon {
+		width: 17px;
+		height: 16px;
+	}
+	.star-rating,
+	.star-rating-nofill {
+		width: 7px;
+		height: 7px;
+	}
+	.downloaded {
+		width: 13px;
+		height: 13px;
+	}
+	.arrow-up {
+		width: 13px;
+		height: 16px;
+	}
+	.night-mode {
+		width: 13px;
+		height: 13px;
+	}
+	.youtube {
+		width: 19px;
+		height: 14px;
+	}
+	.tic-toc {
+		width: 15px;
+		height: 18px;
+	}
+	.twich {
+		width: 20px;
+		height: 16px;
+	}
+	.instagram {
+		width: 21px;
+		height: 21px;
+	}
+	.x {
+		width: 21px;
+		height: 21px;
+	}
+	.card-arrow-left,
+	.card-arrow-right {
+		fill: var(--accent);
+	}
+	.card-arrow-left {
+		transform: rotate(90deg);
+		width: 9px;
+		height: 9px;
+	}
+	.card-arrow-right {
+		transform: rotate(-90deg);
+		width: 9px;
+		height: 9px;
+	}
+	.moon-mobile,
+	.sun-mobile {
+		fill: var(--accent);
+		width: 14px;
+		height: 14px;
+		position: relative;
+		margin-left: 1px;
+	}
+	.mobile-close {
+		fill: var(--accent);
+		width: 14px;
+		height: 14px;
+	}
+	.mobile-nav__list .star,
+	.mobile-nav__list .star,
+	.mobile-nav__list .updates-icon,
+	.mobile-nav__list .games-year,
+	.mobile-nav__list .dice,
+	.mobile-nav__list .network,
+	.mobile-nav__list .calendar {
+		fill: #fff;
+	}
+	.mobile-filter-svg {
+		fill: #fff;
+		width: 16px;
+		height: 16px;
+	}
+	.mobile-filter-inverse {
+		fill: var(--accent);
+	}
+	.filter-arrow-down {
+		position: absolute;
+		fill: #fff;
+		width: 6px !important;
+		height: 6px !important;
+		right: 0px;
+		top: 50%;
+		transform: translate(0%, -50%);
+		pointer-events: none;
+	}
+}

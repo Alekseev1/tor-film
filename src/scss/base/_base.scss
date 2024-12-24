@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Inter:300,regular,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700,900");
+
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+}
+
+body {
+	z-index: 5;
+	position: relative;
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	text-wrap: balance;
+	overflow-x: hidden;
+
+	&:after {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background-image: url("./../../img/texture.svg");
+		background-size: cover;
+		opacity: 0.02;
+	}
+}
+
+.texture {
+	content: "";
+	z-index: -1;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: var(--link-color);
+}
+
+code {
+	background-color: #e9f1f6;
+	padding: 0.2rem;
+	border-radius: 4px;
+}
+
+pre.code {
+	overflow-x: auto;
+	background-color: #e9f1f6;
+	padding: 1rem;
+	border-radius: 4px;
+}
+
+@media only screen and (max-width: 460px) {
+	body {
+		background-image: none;
+	}
+}
